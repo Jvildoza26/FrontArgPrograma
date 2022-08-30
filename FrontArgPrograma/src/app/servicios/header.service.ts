@@ -7,7 +7,7 @@ import { Persona } from '../models/persona';
   providedIn: 'root'
 })
 export class HeaderService {
-  private eduUrl='https://argentinaback.herokuapp.com';
+  private eduUrl='https://appargentinaprograma.herokuapp.com';
   
 
   constructor(private http:HttpClient) { }

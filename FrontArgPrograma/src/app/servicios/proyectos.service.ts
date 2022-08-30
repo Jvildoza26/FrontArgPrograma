@@ -8,7 +8,7 @@ import { Proyectos } from '../models/proyectos';
 })
 export class ProyectosService {
 
-  private proyUrl='https://argentinaback.herokuapp.com';
+  private proyUrl='https://appargentinaprograma.herokuapp.com';
 
   constructor(private http:HttpClient) { }
 

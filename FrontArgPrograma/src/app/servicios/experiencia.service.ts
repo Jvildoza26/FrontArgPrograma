@@ -7,7 +7,7 @@ import { Experiencia } from '../models/experiencia';
   providedIn: 'root'
 })
 export class ExperienciaService {
-  private expUrl='https://argentinaback.herokuapp.com';
+  private expUrl='https://appargentinaprograma.herokuapp.com';
 
   constructor(private http:HttpClient) {}
     public getExperiencia():Observable<Experiencia[]>{

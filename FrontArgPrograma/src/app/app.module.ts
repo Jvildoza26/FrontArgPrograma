@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import { NgCircleProgressModule } from 'ng-circle-progress';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -11,28 +12,38 @@ import { FooterComponent } from './componentes/footer/footer.component';
 import { LoginComponent } from './componentes/login/login.component';
 import { EducationComponent } from './componentes/education/education.component';
 import { ExperienciaComponent } from './componentes/experiencia/experiencia.component';
-import { HeaderComponent } from './componetes/header/header.component';
 import { HysComponent } from './componentes/hys/hys.component';
-import { ProyectosComponent } from './cpmponetes/proyectos/proyectos.component';
+import { HomeComponent } from './componentes/home/home.component';
+import { HttpClientModule } from '@angular/common/http';
+import { FormsModule } from '@angular/forms';
+import { HeaderComponent } from './componentes/header/header.component';
+import { ProyectosComponent } from './componentes/proyectos/proyectos.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     BanerComponent,
-    InicioComponent,
-    LogoComponent,
-    SocialComponent,
-    FooterComponent,
-    LoginComponent,
     EducationComponent,
     ExperienciaComponent,
+    FooterComponent,
     HeaderComponent,
+    HomeComponent,
     HysComponent,
-    ProyectosComponent
+    InicioComponent,
+    LoginComponent,
+    LogoComponent,
+    ProyectosComponent,
+    SocialComponent,
+    
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule,
+    FormsModule,
+    NgCircleProgressModule.forRoot(
+      {})
+    
   ],
   providers: [],
   bootstrap: [AppComponent]

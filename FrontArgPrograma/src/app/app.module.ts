@@ -12,6 +12,7 @@ import { LoginComponent } from './componentes/login/login.component';
 import { EducationComponent } from './componentes/education/education.component';
 import { ExperienciaComponent } from './componentes/experiencia/experiencia.component';
 import { HeaderComponent } from './componetes/header/header.component';
+import { HysComponent } from './componentes/hys/hys.component';
 
 @NgModule({
   declarations: [
@@ -24,7 +25,8 @@ import { HeaderComponent } from './componetes/header/header.component';
     LoginComponent,
     EducationComponent,
     ExperienciaComponent,
-    HeaderComponent
+    HeaderComponent,
+    HysComponent
   ],
   imports: [
     BrowserModule,
